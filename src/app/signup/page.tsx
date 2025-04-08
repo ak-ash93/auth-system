@@ -44,6 +44,7 @@ export default function SignupPage() {
 
       // Send user data to backend signup API
       const response = await axios.post("/api/users/signup", user);
+
       console.log("Signup success", response.data);
 
       // Navigate to the login page after successful signup
